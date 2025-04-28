@@ -40,6 +40,16 @@ customers can use to receive discounts on a webshop. Each code can only be used 
     spring.h2.console.enabled=true
     spring.jpa.hibernate.ddl-auto=update
     ```
+   
+3. **Navigate to the Project Directory**:
+
+   Open a terminal and navigate to the root directory of the project (pom.xml) located.
+
+   Run the application:
+
+   ```
+   mvn spring-boot: run
+   ```
 
 ## APIs
 
