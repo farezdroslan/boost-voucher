@@ -15,7 +15,7 @@ public class VoucherEntity {
     private Long id;
 
     private String code; // Unique voucher code
-    private String recipientName;
+    private String recipientName; // Recipient's name
     private String email; // Recipient's email
     private String specialOfferName; // Name of the special offer
     private Integer discountPercentage; // Discount percentage
