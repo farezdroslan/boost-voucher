@@ -27,6 +27,7 @@ public class VoucherEntity {
 
     public VoucherEntity(String code, String recipientName, String email, String specialOfferName, Integer discountPercentage, LocalDate expirationDate) {
         this.code = code;
+        this.recipientName = recipientName;
         this.email = email;
         this.specialOfferName = specialOfferName;
         this.discountPercentage = discountPercentage;
