@@ -58,25 +58,23 @@ customers can use to receive discounts on a webshop. Each code can only be used 
 
     **Request**
 
-
     GET [http://localhost:8080/api/voucher/generate]
 
-
-    **Response**
+   **Response**
 
     ```json
-    [
-        {
-            "id": 1,
-            "code": "D5856FE5",
-            "recipientName": "John Doe",
-            "email": "john.doe@example.com",
-            "specialOfferName": "WinterSale",
-            "discountPercentage": 30,
-            "expirationDate": "2025-12-31",
-            "usageDate": null
-        }
-    ]
+       [
+           {
+               "id": 1,
+               "code": "D5856FE5",
+               "recipientName": "John Doe",
+               "email": "john.doe@example.com",
+               "specialOfferName": "WinterSale",
+               "discountPercentage": 30,
+               "expirationDate": "2025-12-31",
+               "usageDate": null
+           }
+       ]
     ```
 
 2. **Validate voucher code**
@@ -84,7 +82,8 @@ customers can use to receive discounts on a webshop. Each code can only be used 
     **Request**
 
     POST [http://localhost:8080/api/voucher/validate?code=D5856FE5&email=john.doe@example.com]
-    Content-Type: application/json
+    
+   Content-Type: application/json
 
     **Response**
     
@@ -99,8 +98,9 @@ customers can use to receive discounts on a webshop. Each code can only be used 
 
     **Request**
 
-    GET [http://localhost:8080/api/voucher/valid?email=john.doe@example.com] 
-    Content-Type: application/json
+    GET [http://localhost:8080/api/voucher/valid?email=john.doe@example.com]
+    
+   Content-Type: application/json
 
     **Response**
 
