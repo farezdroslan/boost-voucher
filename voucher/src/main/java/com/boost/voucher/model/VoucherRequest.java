@@ -75,4 +75,15 @@ public class VoucherRequest {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return "VoucherRequest{" +
+                "specialOfferName='" + specialOfferName + '\'' +
+                ", discountPercentage=" + discountPercentage +
+                ", expirationDate=" + expirationDate +
+                ", recipientName='" + recipientName + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }

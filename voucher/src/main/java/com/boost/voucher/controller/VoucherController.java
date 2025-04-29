@@ -25,8 +25,9 @@ public class VoucherController {
     }
 
     @PostMapping("/generate")
+    @ResponseBody
     public ResponseEntity<Object> generateVoucher (@RequestBody @Valid VoucherRequest request) {
-
+        System.out.println("Received request: " + request); // Print the request
         if (request.getExpirationDate() == null || !request.getExpirationDate().isAfter(LocalDate.now())) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST)
                     .body(Map.of(
