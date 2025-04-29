@@ -69,10 +69,21 @@ customers can use to receive discounts on a webshop. Each code can only be used 
     **Request**
 
     GET [http://localhost:8080/api/voucher/generate]
-
+    
+   Body
+   ```json
+      {
+          "specialOfferName": "WinterSale",
+          "discountPercentage": 30,
+          "expirationDate": "2025-12-31",
+          "recipientName": "John Doe",
+          "email": "john.doe@example.com"
+      }
+   ```
+   
    **Response**
-
-    ```json
+   
+   ```json
        [
            {
                "id": 1,
@@ -85,7 +96,7 @@ customers can use to receive discounts on a webshop. Each code can only be used 
                "usageDate": null
            }
        ]
-    ```
+   ```
 
 2. **Validate voucher code**
 
